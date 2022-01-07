@@ -1,0 +1,11 @@
+@import "./colors.scss";
+
+body {
+  background: rgb(109, 103, 103);
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: $main-text;
+}
