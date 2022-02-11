@@ -1,0 +1,32 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.certificateContent {
+  @include flex($flexFlow: none, $alignItems: start);
+  margin-top: 120px;
+}
+
+.certificateTitle {
+  @include title;
+  text-align: start;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.certificateSubTitle {
+  @include descr;
+  text-align: start;
+  margin-top: 8px;
+}
+
+.cartificateDescr {
+  @include title;
+  font-size: 16px;
+  text-align: start;
+  margin-top: 45px;
+}
+
+.certificateCli {
+  @include flex($justifyContent: space-between);
+  margin-top: 35px;
+}

@@ -1,0 +1,51 @@
+@import "../mixins.scss";
+@import "../colors.scss";
+
+.moreQuestion {
+  @include flex($flexFlow: none, $justifyContent: space-between);
+}
+
+.questions {
+  @include flex($alignItems: none);
+  padding: 0;
+  flex-direction: column;
+  gap: 20px;
+
+  & li {
+    @include flex(
+      $justifyContent: none,
+      $flexFlow: none,
+      $alignItems: baseline
+    );
+    font-size: 14px;
+    & span {
+      line-height: 25px;
+    }
+    list-style-type: none;
+    & img {
+      padding-right: 15px;
+      padding-top: 5px;
+    }
+  }
+}
+
+.wrapper {
+  max-width: 360px;
+}
+
+.moreAboutUs {
+  @include baseBtn;
+  margin-top: 50px;
+  color: $text-white;
+}
+
+.title {
+  @include title;
+  font-size: 20px;
+  text-align: start;
+}
+
+.question {
+  @include descr;
+  text-align: start;
+}

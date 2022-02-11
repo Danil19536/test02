@@ -1,0 +1,46 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.headerAboutUsContent {
+  @include flex($flexFlow: none, $justifyContent: space-between);
+}
+
+.headerTitle {
+  @include title;
+  text-align: start;
+}
+
+.headerAbotUsTwoTitle {
+  font-size: 46px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.headerSubTitle {
+  font-size: 17px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.headerDescr {
+  margin-top: 24px;
+  color: $main-text;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.aboutUs {
+  color: $color-light-red;
+}
+
+.headerContainer {
+  background: none;
+}
+
+.headerAboutUsContent {
+  margin-top: 95px;
+}
+
+.headerinfo {
+  max-width: 600px;
+}

@@ -1,26 +1,79 @@
 @mixin flex($flexFlow: row wrap, $justifyContent: center, $alignItems: center) {
-    display: flex;
-    flex-flow: $flexFlow;
-    justify-content: $justifyContent;
-    align-items: $alignItems;
+  display: flex;
+  flex-flow: $flexFlow;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin baseBtn {
+  width: 207px;
+  height: 52px;
+  padding: 0px 40px;
+  background: $brend-orange-gradient;
+  border: none;
+  border-radius: 4px;
+}
+
+@mixin title {
+  text-align: center;
+  font-size: 17px;
+  color: $text-title;
+}
+
+@mixin descr {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+@mixin footerMenu {
+  @include flex($alignItems: none);
+  flex-direction: column;
+  color: $text-white;
+  & ul {
+    & li {
+      margin-top: 8px;
+      list-style-type: none;
+    }
+  }
+}
+
+@mixin hoverArr {
+  @include flex;
+  background-color: #ff3f3a;
+  border-radius: 50%;
+  color: $text-white;
+  transition: all;
+  padding: 15px 17px;
+  transition-duration: 0.5s;
 }
 
 @mixin for-phone-only {
-    @media (max-width: 599px) { @content; }
+  @media (max-width: 599px) {
+    @content;
+  }
 }
 
 @mixin for-tablet-portrait-up {
-    @media (min-width: 600px) { @content; }
+  @media (min-width: 600px) {
+    @content;
+  }
 }
 
 @mixin for-tablet-landscape-up {
-    @media (min-width: 900px) { @content; }
+  @media (min-width: 900px) {
+    @content;
+  }
 }
 
 @mixin for-desktop-up {
-    @media (min-width: 1200px) { @content; }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin for-big-desktop-up {
-    @media (min-width: 1800px) { @content; }
+  @media (min-width: 1800px) {
+    @content;
+  }
 }

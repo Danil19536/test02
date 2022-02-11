@@ -1,23 +1,100 @@
 @import "./mixins.scss";
 @import "./colors.scss";
 
-ul {
-  @include flex($justifyContent: space-around);
-  font-size: 18px;
+.headerContainer {
+  background-image: url("../images/bg/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  @include for-phone-only {
-    font-size: 14px;
-  }
-  margin: 0;
-  list-style: none;
-  a {
-    color: $main-text;
-    text-decoration: none;
+.headerWrapper {
+  @include flex($justifyContent: space-evenly);
+  & ul {
+    @include flex;
+    padding: 0px;
+    gap: 40px;
+    & li {
+      list-style-type: none;
+      & a {
+        text-decoration: none;
+        color: $main-text;
+      }
+    }
   }
 }
 
-header {
-  background: white;
-  margin: 0;
-  padding: 10px;
+.getcon {
+  @include baseBtn;
+  margin-top: 20px;
+  color: $text-white;
+  font-size: 17px;
+}
+
+.logInOrRegister {
+  @include flex;
+
+  & a {
+    text-decoration: none;
+    color: $main-text;
+    padding-left: 5px;
+    font-weight: 600;
+  }
+}
+
+.headerContent {
+  @include flex($justifyContent: space-between, $alignItems: none);
+  margin-top: 100px;
+}
+
+.playShow {
+  @include flex($justifyContent: none);
+  font-size: 14px;
+}
+
+.headerText {
+  max-width: 500px;
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 55px;
+}
+
+.btns {
+  margin-top: 60px;
+}
+
+.exploreCourses {
+  @include baseBtn;
+  font-size: 16px;
+  margin-left: 25px;
+  font-weight: bold;
+  color: $text-white;
+}
+
+.aboutUs {
+  @include baseBtn;
+  width: 140px;
+  font-size: 16px;
+  padding: 0;
+  border: solid 1px #f75e05;
+  background: rgba($color: #000000, $alpha: 0);
+  font-weight: bold;
+}
+
+.showInfo {
+  @include flex($justifyContent: space-between);
+  margin-top: 190px;
+  padding: 0 0 60px 0px;
+  margin-bottom: 100px;
+  & li {
+    @include flex;
+    font-size: 16px;
+    & span {
+      font-size: 46px;
+      padding-right: 15px;
+      font-weight: bold;
+    }
+    & img {
+      padding: 0px 47px;
+    }
+  }
 }

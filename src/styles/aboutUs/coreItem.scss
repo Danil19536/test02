@@ -1,0 +1,35 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.coreTitle {
+  @include title;
+}
+
+.coreSubTitle {
+  @include descr;
+}
+
+.coreItemsWrapper {
+  @include flex($flexFlow: none, $justifyContent: space-between);
+  margin-top: 60px;
+}
+
+.singleItem {
+  max-width: 240px;
+  @include flex($flexFlow: column);
+}
+
+.itemTitle {
+  margin-top: 24px;
+}
+
+.itemDescr {
+  margin-top: 15px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.ourCoreValues {
+  margin-top: 150px;
+}

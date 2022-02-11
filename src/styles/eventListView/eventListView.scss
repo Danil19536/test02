@@ -1,0 +1,26 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.counter {
+  @include flex;
+  gap: 0px 10px;
+  & ul {
+    padding: 0;
+  }
+  & li {
+    list-style-type: none;
+    & a {
+      text-decoration: none;
+      color: $main-text;
+    }
+  }
+}
+
+.arrowRight {
+  width: 16px;
+  height: 16px;
+}
+
+.eventListTitle {
+  margin-top: 80px;
+}

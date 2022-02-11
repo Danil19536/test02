@@ -1,0 +1,51 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.schoolTitle {
+  @include title;
+  font-weight: bold;
+  margin-top: 120px;
+  padding-top: 120px;
+}
+
+.schoolSubTitle {
+  @include descr;
+  max-width: 810px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.emainAndBtnWrapper {
+  margin-top: 60px;
+  @include flex;
+}
+
+.email {
+  & input {
+    width: 410px;
+    height: 50px;
+    padding: 0 15px;
+  }
+}
+
+.subsc {
+  @include baseBtn;
+  margin-left: 25px;
+  color: $text-white;
+}
+
+.schoolContentWrapper {
+  position: relative;
+  height: 585px;
+  background-image: url("../../images//school/schoolBg.jpg");
+}
+
+.ilustrationSchool {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.two {
+  left: 0;
+}

@@ -1,0 +1,59 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.studentProgressWrapper {
+  @include flex($flexFlow: none, $justifyContent: space-between);
+  margin-top: 150px;
+}
+
+.progressTitle {
+  @include title;
+  text-align: start;
+  text-transform: uppercase;
+  color: $text-title;
+}
+
+.progressSubTitle {
+  @include descr;
+  text-align: start;
+  margin-top: 8px;
+}
+
+.progressSteps {
+  margin-top: 60px;
+  border-left: 1px solid #9a9ca5;
+}
+
+.step {
+  max-width: 450px;
+  padding-left: 44px;
+  color: #787a80;
+}
+
+.stepsWrapper {
+  position: relative;
+  margin-bottom: 32px;
+  & img {
+    position: absolute;
+    top: 0;
+    left: -4px;
+  }
+}
+
+.stepTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: $text-title;
+}
+
+.stepSubTitle {
+  font-size: 13px;
+  line-height: 21px;
+  margin-top: 10px;
+  color: $text-title;
+}
+
+.containerWrapper {
+  background: none;
+}

@@ -1,0 +1,105 @@
+@import "../mixins.scss";
+@import "../colors.scss";
+
+.ourEventsInfo {
+  margin-top: 80px;
+}
+
+.ourEventsTitle {
+  text-align: center;
+  font-size: 17px;
+  padding-top: 80px;
+}
+
+.ourEventDescr {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.eventsList {
+  @include flex($justifyContent: space-around);
+  margin-top: 60px;
+}
+
+.event {
+  width: 1200px;
+  @include flex;
+  padding: 42px 33px;
+  background: $text-white;
+  border-radius: 4px;
+  margin-top: 24px;
+}
+
+.dataEvent {
+  @include flex($alignItems: center);
+  font-size: 48px;
+  font-weight: 900;
+  color: $color-light-red;
+}
+
+.monthAndTime {
+  margin-left: 20px;
+}
+
+.month {
+  font-size: 20px;
+  color: #000;
+}
+
+.time {
+  font-size: 16px;
+  margin-top: 4px;
+  color: $main-text;
+}
+
+.viewMore {
+  @include baseBtn;
+  width: 130px;
+  padding: 0;
+  background: $text-white;
+  border: solid 1px $color-light-red;
+  color: #f75e05;
+  &:hover {
+    color: $text-white;
+    background: $brend-orange-gradient;
+  }
+}
+
+.ExploreAllEvents {
+  @include baseBtn;
+  color: $text-white;
+}
+
+.mainInfo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.eventInfo {
+  flex: 1;
+  margin-left: 42px;
+}
+.Eventdescr {
+  font-size: 16px;
+  color: #787a80;
+}
+
+.ourEventsWrapper {
+  background-image: url("../../images/bg/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.doYouWantMore {
+  @include flex;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+
+.questionMore {
+  margin-right: 40px;
+  font-size: 28px;
+  font-weight: bold;
+}

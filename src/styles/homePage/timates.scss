@@ -1,0 +1,84 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.teamInfo {
+  @include flex($justifyContent: space-between);
+}
+
+.arrows {
+  @include flex;
+  gap: 15px;
+  & a {
+    color: $main-text;
+    &:hover {
+      @include hoverArr;
+    }
+  }
+}
+
+.TeamTitle {
+  @include title;
+  text-align: start;
+}
+
+.teamSubTitle {
+  @include descr;
+  text-align: start;
+}
+
+.timates {
+  @include flex($justifyContent: space-between);
+  margin-top: 48px;
+}
+
+.imgTemate {
+  position: relative;
+  border-radius: 4px;
+  background: #ffcf2d;
+  &:hover {
+    .media {
+      display: flex;
+      box-shadow: 0 0 10px 10px rgba(30, 33, 44, 0.03);
+    }
+  }
+}
+
+.media {
+  @include flex;
+  display: none;
+  gap: 10px;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: $text-white;
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+
+.name {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.position {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.gradientBg {
+  padding: 15px 15px 0 15px;
+  &:hover {
+    background: linear-gradient(
+      180deg,
+      rgba(30, 33, 44, 0) 43.9%,
+      rgba(30, 33, 44, 0.03) 55.21%,
+      rgba(30, 33, 44, 0.33) 68.73%,
+      rgba(30, 33, 44, 0.56) 76.17%,
+      rgba(30, 33, 44, 0.768225) 83.75%,
+      rgba(30, 33, 44, 0.92) 91.49%,
+      #1e212c 100%
+    );
+  }
+}

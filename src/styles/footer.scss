@@ -1,0 +1,139 @@
+@import "./colors.scss";
+@import "./mixins.scss";
+
+.footer {
+  background: $footer-bg;
+}
+
+.footerWrapper {
+  @include flex(
+    $flexFlow: none,
+    $alignItems: baseline,
+    $justifyContent: space-between
+  );
+  gap: 50px;
+  padding-top: 50px;
+}
+
+.logoDescr {
+  max-width: 280px;
+  color: $text-white;
+  color: #999;
+  line-height: 17px;
+  font-size: 10px;
+}
+
+.socMedia {
+  & ul {
+    @include flex($justifyContent: start);
+    padding: 0;
+    color: $text-white;
+    & li {
+      padding: 0 23px 0 0;
+      list-style-type: none;
+      font-size: 23px;
+      margin-top: 10px;
+      color: #999;
+    }
+  }
+}
+
+.siteMap {
+  @include footerMenu;
+  max-width: 80px;
+}
+
+.siteMapTitle {
+  font-size: 16px;
+}
+
+.map {
+  padding: 0px;
+  color: #999;
+}
+
+.courses {
+  @include footerMenu;
+  max-width: 109px;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.coursesWrapper {
+  color: #999;
+}
+
+.contactUs {
+  @include footerMenu;
+}
+
+.numberAndEmailWrapper {
+  color: #999;
+}
+
+.numberAndEmailItem {
+  @include flex($justifyContent: start);
+}
+
+.contactTitle {
+  padding-right: 30px;
+}
+
+.numberAndEmail {
+  & span {
+    padding-left: 8px;
+  }
+}
+
+.signUpToOurNewsletterTitle {
+  color: $color-white;
+}
+
+.sign {
+  position: relative;
+  margin-top: 24px;
+
+  & input {
+    width: 286px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+
+  & svg {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    margin: 10px;
+    color: #999;
+  }
+}
+
+.studioAndGoToTopWrapper {
+  background-color: #282a3e;
+}
+
+.footerContentWrapper {
+  @include flex($justifyContent: space-between);
+  padding: 10px;
+  background-color: none;
+  color: $text-white;
+}
+
+.studio {
+  font-size: 10px;
+  & svg {
+    margin: 0 7px;
+    color: #ff3f3a;
+  }
+}
+
+.eventListTitle {
+  @include title;
+}
+
+.eventListSubtitle {
+  @include descr;
+}

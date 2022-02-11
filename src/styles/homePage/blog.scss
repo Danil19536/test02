@@ -1,0 +1,98 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.blogHeader {
+  @include flex($justifyContent: space-between, $alignItems: end);
+  margin-top: 120px;
+}
+
+.blogTitle {
+  @include title;
+  text-align: start;
+}
+
+.blogSubTitle {
+  @include descr;
+}
+
+.goBlogBtn {
+  @include baseBtn;
+  color: $text-white;
+}
+
+.blockCartWrapper {
+  @include flex($flexFlow: none, $justifyContent: space-between);
+  margin-top: 60px;
+}
+
+.respo {
+  margin-top: 10px;
+  line-height: 22px;
+}
+
+.qustionsCart {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.imgAndbtn {
+  position: relative;
+  & img {
+    border-radius: 5px;
+  }
+}
+
+.cartBtn {
+  position: absolute;
+  top: 0;
+  padding: 12px;
+}
+
+.blogItemBtn {
+  @include flex;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  padding: 4px 10px;
+  background-color: $text-white;
+  & span {
+    padding-left: 5px;
+  }
+}
+
+.dataAndTimePostCart {
+  @include flex($justifyContent: start);
+  margin-top: 20px;
+}
+
+.DataPostAndTime {
+  @include flex;
+  color: $main-text;
+  & span {
+    @include flex;
+    padding-left: 7px;
+  }
+  & svg {
+    margin-right: 7px;
+  }
+}
+
+.workPositinnCart {
+  color: $main-text;
+}
+
+.cartLink {
+  @include flex($justifyContent: start);
+  margin-top: 16px;
+  font-weight: bold;
+  & svg {
+    margin-left: 10px;
+    color: $color-light-red;
+  }
+}
+
+.cartWrapper {
+  max-width: 390px;
+}

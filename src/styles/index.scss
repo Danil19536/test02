@@ -1,3 +1,50 @@
-@import './App.scss';
-@import './colors.scss';
-@import './header.scss';
+@import "./App.scss";
+@import "./colors.scss";
+@import "./header.scss";
+@import "./footer.scss";
+
+// homePage files
+@import "./homePage/benefits.scss";
+@import "./homePage/blog.scss";
+@import "./homePage/certificate.scss";
+@import "./homePage/events.scss";
+@import "./homePage/readToLearnt.scss";
+@import "./homePage/testimonials.scss";
+@import "./homePage/timates.scss";
+@import "./homePage/whoWeArae.scss";
+@import "./homePage/school.scss";
+
+// about Us files
+@import "./aboutUs/headerAboutUs.scss";
+@import "./aboutUs/whatchVideo.scss";
+@import "./aboutUs/coreItem.scss";
+@import "./aboutUs/progress.scss";
+@import "./aboutUs/outHereWork.scss";
+@import "./aboutUs/allies.scss";
+@import "./aboutUs/directori.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:ital,wght@0,400;1,200&family=Ubuntu:ital,wght@1,300&display=swap");
+
+// EventListView files
+@import "./eventListView/eventListView.scss";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

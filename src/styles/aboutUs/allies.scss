@@ -1,0 +1,20 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+.alliesWrapper {
+  @include flex($flexFlow: wrap);
+  gap: 43px;
+  margin-top: 60px;
+}
+
+.alliesTitle {
+  @include title;
+}
+
+.alliesSubTitle {
+  @include descr;
+}
+
+.ally {
+  max-width: 285px;
+}
